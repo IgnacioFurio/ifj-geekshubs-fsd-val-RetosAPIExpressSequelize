@@ -12,6 +12,10 @@ module.exports = {
       nombre_usuario: {
         type: Sequelize.STRING
       },
+      DNI: {
+        type: Sequelize.STRING,
+        unique: true
+      },
       nombre: {
         type: Sequelize.STRING
       },
