@@ -1,4 +1,7 @@
 'use strict';
+
+const { sequelize } = require('../models');
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -11,7 +14,7 @@ module.exports = {
       },
       nombre: {
         type: Sequelize.STRING
-      },
+      }
     });
   },
   async down(queryInterface, Sequelize) {

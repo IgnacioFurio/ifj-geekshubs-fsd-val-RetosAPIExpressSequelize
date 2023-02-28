@@ -7,5 +7,4 @@ app.use(express.json());
 
 app.listen(PORT, () => {
     console.log(`Server ready at port ${PORT}`)
-
 })
